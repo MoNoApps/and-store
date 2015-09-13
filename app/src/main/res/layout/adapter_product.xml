@@ -1,0 +1,79 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:padding="6dip" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/abc_btn_radio_material"
+            android:layout_alignParentBottom="true"
+            android:focusableInTouchMode="false" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="197dp"
+            android:layout_height="106dp">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="183dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toRightOf="@id/icon"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/secondLine"
+                android:layout_width="180dp"
+                android:layout_height="28dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Description"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:id="@+id/textView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:checked="false"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:id="@+id/textView2"
+                android:gravity="right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

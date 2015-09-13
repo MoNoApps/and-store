@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical" >
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="?android:attr/textAppearanceLarge"
+                android:text="@string/name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textIsSelectable="true"
+                tools:context=".WrineDetailFragment" />
+
+            <EditText
+                android:id="@+id/wrine_name"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="@string/comp_sample_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plus_sign_out_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:id="@+id/open_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Order" />
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:id="@+id/close_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Desire List" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
